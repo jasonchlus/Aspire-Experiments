@@ -41,7 +41,7 @@ function updateCountdown() {
 function playBackgroundVideo() {
     if (!backgroundVideo) return;
     backgroundVideo.currentTime = 0;
-    backgroundVideo.playbackRate = 0.4;
+    backgroundVideo.playbackRate = 0.5;
     backgroundVideo.style.transition = 'opacity 1s ease-in-out';
     backgroundVideo.style.opacity = '0.6';
     backgroundVideo.play();
@@ -56,7 +56,8 @@ function init() {
     updateCountdown();
     setInterval(updateCountdown, 1000);
     
-    // Play video every 60 seconds
+    // Play video immediately on load, then every 60 seconds
+    setTimeout(playBackgroundVideo, 2000); // Play after 2 seconds
     setInterval(playBackgroundVideo, 60000);
 }
 
