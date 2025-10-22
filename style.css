@@ -99,10 +99,10 @@ body {
 }
 
 .launch-message {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 700;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: #8B5CF6;
+    text-shadow: 2px 2px 8px #EC4899;
     margin-bottom: 2rem;
     animation: pulse 2s ease-in-out infinite;
 }
@@ -134,12 +134,12 @@ body {
 }
 
 .time-number {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 900;
-    color: var(--aspire-purple);
+    color: #8B5CF6;
     line-height: 1;
     margin-bottom: 1rem;
-    text-shadow: 0 2px 4px rgba(139, 92, 246, 0.2);
+    text-shadow: 0 2px 8px #EC4899;
 }
 
 .time-label {

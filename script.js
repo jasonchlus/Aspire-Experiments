@@ -40,16 +40,14 @@ function updateCountdown() {
 // Video playback function
 function playBackgroundVideo() {
     if (!backgroundVideo) return;
-    
     backgroundVideo.currentTime = 0;
-    backgroundVideo.playbackRate = 0.25;
-    backgroundVideo.style.opacity = '1';
-    
+    backgroundVideo.playbackRate = 0.4;
+    backgroundVideo.style.transition = 'opacity 1s ease-in-out';
+    backgroundVideo.style.opacity = '0.6';
     backgroundVideo.play();
-    
-    backgroundVideo.addEventListener('ended', () => {
+    backgroundVideo.onended = function() {
         backgroundVideo.style.opacity = '0';
-    }, { once: true });
+    };
 }
 
 // Initialize
