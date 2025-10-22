@@ -51,7 +51,7 @@ body {
 .main-content {
     background: linear-gradient(135deg, var(--aspire-purple) 0%, var(--aspire-pink) 50%, var(--aspire-purple) 100%);
     min-height: 100vh;
-    padding-top: 80px;
+    padding-top: 0;
     position: relative;
     overflow: hidden;
 }
@@ -72,12 +72,12 @@ body {
 /* Background Video */
 .background-video {
     position: fixed;
-    top: 80px;
+    top: 0;
     left: 0;
     width: 100vw;
-    height: calc(100vh - 80px);
+    height: 100vh;
     object-fit: cover;
-    z-index: 0;
+    z-index: 1;
     opacity: 0;
     pointer-events: none;
     transition: opacity 1s ease-in-out;
@@ -90,19 +90,23 @@ body {
     padding: 2rem;
     text-align: center;
     position: relative;
-    z-index: 1;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 /* Header */
 .countdown-header {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 .launch-message {
     font-size: 3rem;
     font-weight: 700;
-    color: #8B5CF6;
-    text-shadow: 2px 2px 8px #EC4899;
+    color: white;
     margin-bottom: 2rem;
     animation: pulse 2s ease-in-out infinite;
 }
@@ -113,7 +117,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    margin: 6rem 0;
+    margin: 3rem 0;
     flex-wrap: wrap;
 }
 
@@ -139,7 +143,6 @@ body {
     color: #8B5CF6;
     line-height: 1;
     margin-bottom: 1rem;
-    text-shadow: 0 2px 8px #EC4899;
 }
 
 .time-label {
@@ -154,16 +157,15 @@ body {
     font-size: 4rem;
     font-weight: 900;
     color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     animation: blink 2s ease-in-out infinite;
 }
 
 /* Reaction Section */
 .reaction-section {
-    margin: 4rem 0;
+    margin: 2rem 0 0 0;
     text-align: center;
     position: relative;
-    z-index: 2;
+    z-index: 3;
 }
 
 .reaction-gif {
