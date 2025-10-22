@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aspire Launch Countdown</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <strong>Aspire</strong> Launch Countdown
+            </a>
+        </div>
+    </nav>
+
+    <!-- Background Video -->
+    <video id="background-video" class="background-video" muted playsinline>
+        <source src="images/Aspire_GFX_Transition_V2.mp4" type="video/mp4">
+    </video>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="countdown-container">
+            <div class="countdown-header">
+                <h1 id="launch-message" class="launch-message">Counting down to Aspire Launch</h1>
+            </div>
+            
+            <div class="countdown-timer" id="countdown-timer">
+                <div class="time-segment">
+                    <div class="time-number" id="days">00</div>
+                    <div class="time-label">Days</div>
+                </div>
+                <div class="time-separator">:</div>
+                <div class="time-segment">
+                    <div class="time-number" id="hours">00</div>
+                    <div class="time-label">Hours</div>
+                </div>
+                <div class="time-separator">:</div>
+                <div class="time-segment">
+                    <div class="time-number" id="minutes">00</div>
+                    <div class="time-label">Minutes</div>
+                </div>
+                <div class="time-separator">:</div>
+                <div class="time-segment">
+                    <div class="time-number" id="seconds">00</div>
+                    <div class="time-label">Seconds</div>
+                </div>
+            </div>
+
+            <div class="reaction-section">
+                <div class="reaction-container">
+                    <img src="images/fowler-boom.gif" alt="Aspire Launch Reaction" class="reaction-gif" />
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
