@@ -230,3 +230,29 @@ body {
         font-size: 1.5rem;
     }
 }
+
+/* Accessibility: Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+    
+    .launch-message {
+        animation: none !important;
+    }
+    
+    .time-separator {
+        animation: none !important;
+        opacity: 1 !important;
+    }
+    
+    .background-video {
+        display: none !important;
+    }
+    
+    .reaction-gif {
+        content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"/>');
+        background: rgba(139, 92, 246, 0.1);
+    }
+}
