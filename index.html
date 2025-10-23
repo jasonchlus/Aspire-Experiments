@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aspire Launch Countdown</title>
+    <meta http-equiv="refresh" content="3600">
+    <meta name="description"
+        content="aspire.dev is launching soon! Join us for the countdown to the most exciting developer experience platform.">
+    <meta name="keywords" content="aspire, aspire.dev, developer tools, launch, countdown">
+    <meta name="author" content="Aspire Team">
+    <meta property="og:title" content="aspire.dev - Coming Soon!">
+    <meta property="og:description" content="The future of developer experience is almost here. Join the countdown!">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#512BD4">
+    <title>aspire.dev - Coming Soon!</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <!-- Background Video -->
     <video id="background-video" class="background-video" muted playsinline>
@@ -16,34 +32,37 @@
     <main class="main-content">
         <div class="countdown-container">
             <div class="countdown-header">
-                <h1 id="launch-message" class="launch-message">aspire.dev is coming soon!</h1>
+                <h1 id="launch-message" class="launch-message"><code class="brand-code">aspire.dev</code> <span class="is-coming-text">is
+                    coming soon!</span></h1>
             </div>
-            
-            <div class="countdown-timer" id="countdown-timer">
-                <div class="time-segment">
+
+            <div class="countdown-timer" id="countdown-timer" role="timer" aria-live="polite">
+                <div class="time-segment" aria-label="Days remaining">
                     <div class="time-number" id="days">00</div>
-                    <div class="time-label">Days</div>
+                    <div class="time-label"><span class="label-full">Days</span><span class="label-abbr">Days</span></div>
                 </div>
-                <div class="time-separator">:</div>
-                <div class="time-segment">
+                <div class="time-separator" aria-hidden="true">:</div>
+                <div class="time-segment" aria-label="Hours remaining">
                     <div class="time-number" id="hours">00</div>
-                    <div class="time-label">Hours</div>
+                    <div class="time-label"><span class="label-full">Hours</span><span class="label-abbr">Hrs</span></div>
                 </div>
-                <div class="time-separator">:</div>
-                <div class="time-segment">
+                <div class="time-separator" aria-hidden="true">:</div>
+                <div class="time-segment" aria-label="Minutes remaining">
                     <div class="time-number" id="minutes">00</div>
-                    <div class="time-label">Minutes</div>
+                    <div class="time-label"><span class="label-full">Minutes</span><span class="label-abbr">Mins</span></div>
                 </div>
-                <div class="time-separator">:</div>
-                <div class="time-segment">
+                <div class="time-separator" aria-hidden="true">:</div>
+                <div class="time-segment" aria-label="Seconds remaining">
                     <div class="time-number" id="seconds">00</div>
-                    <div class="time-label">Seconds</div>
+                    <div class="time-label"><span class="label-full">Seconds</span><span class="label-abbr">Secs</span></div>
                 </div>
             </div>
 
             <div class="reaction-section">
                 <div class="reaction-container">
-                    <img src="images/fowler-boom.gif" alt="Aspire Launch Reaction" class="reaction-gif" />
+                    <img src="images/fowler-boom.gif" alt="Excited developer saying BOOM! - Launch celebration"
+                        class="reaction-gif" loading="lazy" decoding="async" />
+                    <div class="boom-text" aria-hidden="true">BOOM!</div>
                 </div>
             </div>
         </div>
@@ -51,4 +70,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
